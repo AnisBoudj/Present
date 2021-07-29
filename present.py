@@ -28,7 +28,6 @@ def encrypt(key,plain):
     bin_plain = ''.join(format(ord(i), 'b') for i in plain)
 
     # SBOX
-    sbox_dict={'0' : 'c', '1': '5','2' :'6','3' :'b','4': '9','5':'0','6':'a','7':'d','8':'3','9':'e','a':'f','b':'8','c':'4','d':'7','e' :'1','f':'2'}
     sbox_str='c 5 6 b 9 0 a d 3 e f 8 4 7 1 2'
     sbox_list= sbox_str.split(' ')
 
